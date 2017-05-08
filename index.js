@@ -31,7 +31,7 @@ function handler (req, res) {
         body = Buffer.concat(body).toString();
         body = JSON.parse(body);
 
-        const e = Event(body.to, body.payload);
+        const e = Event(body.type, body.to, body.payload);
         e.send();
 
         res.writeHead(201);

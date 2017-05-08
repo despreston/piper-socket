@@ -4,7 +4,7 @@
 
   socket.emit('join_room', 'user:twitter|15740537');
 
-  socket.on('event', data => {
+  socket.on('notification', data => {
     console.log(JSON.parse(data));
   });
 </script>
