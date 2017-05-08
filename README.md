@@ -3,7 +3,7 @@ websockets server for Balance
 
 
 ### Data-interchange format
-Format for sending a new event through piper-sockekt
+Format for sending a new event through piper-socket. These are **body** params. Query params are not supported.
 
 | Field name | Type   | Description                                             | Example            |
 | ---------- | ------ | ------------------------------------------------------- | ------------------ |
