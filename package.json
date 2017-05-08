@@ -1,0 +1,27 @@
+{
+  "name": "piper-socket",
+  "version": "1.0.0",
+  "description": "socket server for Balance platform",
+  "main": "index.js",
+  "config": {
+    "port": 9001
+  },
+  "scripts": {
+    "start": "node index",
+    "debug": "nodemon index --port 9001",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/despreston/piper-socket.git"
+  },
+  "author": "des preston",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/despreston/piper-socket/issues"
+  },
+  "homepage": "https://github.com/despreston/piper-socket#readme",
+  "dependencies": {
+    "socket.io": "^1.7.4"
+  }
+}
