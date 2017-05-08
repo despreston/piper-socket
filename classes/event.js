@@ -6,7 +6,6 @@
 class Event {
 
   constructor (io, to, payload) {
-
     if (!to || typeof to !== 'string') {
       throw "'to' should be a string.";
     }

@@ -22,7 +22,6 @@ function handler (req, res) {
 
   // POST new events to server
   else if (req.method === 'POST' && req.url === '/event') {
-    
     let body = [];
 
     req.on('data', chunk => {

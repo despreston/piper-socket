@@ -2,9 +2,9 @@
 <script>
   const socket = io('http://localhost:9001');
 
-  socket.emit('join_room', 'user:testuser123');
+  socket.emit('join_room', 'user:twitter|15740537');
 
   socket.on('event', data => {
-    console.log(data);
+    console.log(JSON.parse(data));
   });
 </script>
