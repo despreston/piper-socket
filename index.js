@@ -15,7 +15,7 @@ function handler (req, res) {
         res.end('Error loading index.html');
       }
 
-      res.writeHead(200);
+      res.writeHead(201);
       res.end(data);
     });
   }
