@@ -55,4 +55,8 @@ io.on('connection', socket => {
     socket.join(room);
   });
 
+  socket.on('leave_room', room => {
+    socket.leave(room);
+  });
+
 });
