@@ -1,8 +1,11 @@
 <script src="/socket.io/socket.io.js"></script>
 <script>
-  const socket = io('http://104.236.197.124:9001');
+  const socket = io('https://api.getbalanceapp.com');
 
-  socket.emit('join_room', 'user:twitter|15740537');
+  socket.on('connect', () => {
+    console.log("CONNECTED")
+    socket.emit('join_room', 'user:twitter|15740537');
+  });
 
   socket.on('notification', data => {
     console.log(JSON.parse(data));
